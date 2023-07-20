@@ -124,7 +124,9 @@ footer img {
     justify-content: space-between;
     align-items: center;
     margin: 20px;
-    padding-top: 30px;
+    margin-top: -5px;
+    padding-top: 0px;
+    border-bottom: 2px solid grey;
   }
   header nav {
     display: flex;
@@ -190,5 +192,14 @@ footer img {
   .technicalSkills .technicalSkills__icons img {
     height: 75%;
     width: 75%;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .projects .project__card {
+    width: 20vw;
+    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
