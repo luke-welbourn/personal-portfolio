@@ -72,7 +72,7 @@ body {
     
 }
 
-.projects {
+.project__holder {
 
     display:flex;
     flex-direction: column;
@@ -125,16 +125,27 @@ body {
 footer {
 
     background-color: rgb(66, 62, 62) ;
-    color:antiquewhite;
+    color:rgb(255, 255, 255);
     display:flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 100px;
+    height: 150px;
+    width:100%;
 
-    img {
-        height: 40px;
-        width: 40px;
+    .footer__links {
+
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 40px;
+            width: 40px;
+            background-color: white;
+        }
+
     }
 
 }
@@ -149,6 +160,10 @@ footer {
 .aboutMe__flexItem:nth-child(3) {
     order: 3;
 }
+
+
+
+// MEDIA SCREEN BREAK HERE!
 
 
 
@@ -192,12 +207,13 @@ footer {
     .summary {
 
         display:flex;
+        height: 684px;
 
         .desktop-only {
             display:grid;
             
             img {
-                height:50vw;
+                height:604px;
                 width: auto;
             }
         }
@@ -206,7 +222,7 @@ footer {
             display:flex;
             flex-direction: column;
             justify-content: center;
-            height:355px;
+            height:100%;
             width:50wv;
 
             h1 {
@@ -265,14 +281,23 @@ footer {
     }
 
     .projects {
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
 
-        .project__card {
-            width: 20vw;
-            height: auto;
+        h2 {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project__holder{
+
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            .project__card {
+                width: 25vw;
+                height: auto;
+            }
         }
     }
-
 }

@@ -54,7 +54,7 @@ body {
   gap: 30px;
 }
 
-.projects {
+.project__holder {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,25 +62,25 @@ body {
   margin: 20px;
   gap: 35px;
 }
-.projects .project__card {
+.project__holder .project__card {
   display: flex;
   flex-direction: column;
   width: 80vw;
   height: auto;
   border: 2px solid rgb(101, 163, 204);
 }
-.projects .project__card .project__image {
+.project__holder .project__card .project__image {
   margin-left: -10px;
   margin-top: -10px;
 }
-.projects .project__card img {
+.project__holder .project__card img {
   width: 100%;
   height: auto;
 }
-.projects .project__card p {
+.project__holder .project__card p {
   padding: 5px;
 }
-.projects .project__card .project__tag {
+.project__holder .project__card .project__tag {
   padding: 5px;
   margin-bottom: 10px;
   margin-left: 20px;
@@ -94,16 +94,24 @@ body {
 
 footer {
   background-color: rgb(66, 62, 62);
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 100px;
+  height: 150px;
+  width: 100%;
 }
-footer img {
+footer .footer__links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer__links img {
   height: 40px;
   width: 40px;
+  background-color: white;
 }
 
 .aboutMe__flexItem:nth-child(2) {
@@ -149,19 +157,20 @@ footer img {
   }
   .summary {
     display: flex;
+    height: 684px;
   }
   .summary .desktop-only {
     display: grid;
   }
   .summary .desktop-only img {
-    height: 50vw;
+    height: 604px;
     width: auto;
   }
   .summary .summary__leftSide {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 355px;
+    height: 100%;
     width: 50wv;
   }
   .summary .summary__leftSide h1 {
@@ -193,13 +202,18 @@ footer img {
     height: 75%;
     width: 75%;
   }
-  .projects {
+  .projects h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects .project__holder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  .projects .project__card {
-    width: 20vw;
+  .projects .project__holder .project__card {
+    width: 25vw;
     height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
