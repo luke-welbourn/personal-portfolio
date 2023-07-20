@@ -103,6 +103,17 @@ footer {
 
 }
 
+.aboutMe__flexItem:nth-child(2) {
+    order: 1;
+}
+
+.aboutMe__flexItem:nth-child(1) {
+    order: 2;
+}
+.aboutMe__flexItem:nth-child(3) {
+    order: 3;
+}
+
 
 
 @media screen and (min-width:1024px) {
@@ -170,31 +181,31 @@ footer {
     }
 
 
-    .aboutMe__flexItem:nth-child(1) {
-        order: 2;
-    }
-
-    .aboutMe__flexItem:nth-child(2) {
+    .aboutMe:nth-child(1) {
         order: 1;
     }
 
-    .aboutMe__flexItem:nth-child(3) {
-        order: 3;
+    .aboutMe:nth-child(2) {
+        order: 2;
     }
+
+
 
     .aboutMe {
-        display:flex;
-        flex-direction: row;
 
-        .aboutMe__rightSide {
-            display: flex;
+        display:flex;
+        flex-direction: row-reverse;
+        gap: 30px;
+
+        .aboutMe__rightSideDesktop {
+            flex: display;
             flex-direction: column;
-            align-items:center;
-            color: red;
+            align-self: center;
         }
+
+
     }
 
-// the order of the aboutme section needs to changed on the html or you need to look up a solution as the right side is class not container
 
 
 }
