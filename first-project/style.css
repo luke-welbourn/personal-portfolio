@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 * {
   margin: 10px;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 header {
@@ -65,7 +67,11 @@ body {
   flex-direction: column;
   width: 80vw;
   height: auto;
-  border: 2px solid red;
+  border: 2px solid rgb(101, 163, 204);
+}
+.projects .project__card .project__image {
+  margin-left: -10px;
+  margin-top: -10px;
 }
 .projects .project__card img {
   width: 100%;
