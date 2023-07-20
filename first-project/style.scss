@@ -1,0 +1,200 @@
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: none;
+}
+
+
+body {
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.summary {
+
+    margin:20px;
+    padding-top: 20px;
+
+    .desktop-only {
+        display:none;
+    }
+
+
+    .summary__headline {
+        padding-top: 30px;
+        font-size:3em;
+    }
+
+}
+
+.aboutMe {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+    padding-bottom: 50px;
+
+    h2 {
+        padding-bottom: 20px;
+    }
+}
+
+.technicalSkills {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+    padding-bottom: 50px;
+    
+}
+
+.projects {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:20px;
+    gap:35px;
+
+    .project__card {
+
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+    
+    img {
+        height: 100px;
+        width: auto;
+    }
+}
+
+footer {
+
+    background-color: rgb(66, 62, 62) ;
+    color:antiquewhite;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+    height: 100px;
+
+    img {
+        height: 40px;
+        width: 40px;
+    }
+
+}
+
+
+
+@media screen and (min-width:1024px) {
+
+    header {
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        margin:20px;
+        padding-top:30px;
+
+        nav {
+            display:flex;
+            align-items: center;
+            gap:20px;
+            
+            a {
+                color:black;
+                text-decoration: none;;
+            }
+
+
+            #nav__getintouch {
+                border: 2px solid black;
+                border-radius: 5px;
+                font-weight:bold;
+                height:40px;
+                width:130px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+
+
+    .summary {
+
+        display:flex;
+
+        .desktop-only {
+            display:grid;
+            
+            img {
+                height:50vw;
+                width: auto;
+            }
+        }
+
+        .summary__leftSide {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            height:355px;
+            width:50wv;
+
+            h1 {
+                font-size: 2em ;
+            }
+
+
+        }
+
+    }
+
+
+    .aboutMe__flexItem:nth-child(1) {
+        order: 2;
+    }
+
+    .aboutMe__flexItem:nth-child(2) {
+        order: 1;
+    }
+
+    .aboutMe__flexItem:nth-child(3) {
+        order: 3;
+    }
+
+    .aboutMe {
+        display:flex;
+        flex-direction: row;
+
+        .aboutMe__rightSide {
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            color: red;
+        }
+    }
+
+// the order of the aboutme section needs to changed on the html or you need to look up a solution as the right side is class not container
+
+
+}

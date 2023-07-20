@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.summary {
+  margin: 20px;
+  padding-top: 20px;
+}
+.summary .desktop-only {
+  display: none;
+}
+.summary .summary__headline {
+  padding-top: 30px;
+  font-size: 3em;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding-bottom: 50px;
+}
+.aboutMe h2 {
+  padding-bottom: 20px;
+}
+
+.technicalSkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding-bottom: 50px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  gap: 35px;
+}
+.projects .project__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects img {
+  height: 100px;
+  width: auto;
+}
+
+footer {
+  background-color: rgb(66, 62, 62);
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  height: 100px;
+}
+footer img {
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding-top: 30px;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  header nav a {
+    color: black;
+    text-decoration: none;
+  }
+  header nav #nav__getintouch {
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    height: 40px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .summary {
+    display: flex;
+  }
+  .summary .desktop-only {
+    display: grid;
+  }
+  .summary .desktop-only img {
+    height: 50vw;
+    width: auto;
+  }
+  .summary .summary__leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 355px;
+    width: 50wv;
+  }
+  .summary .summary__leftSide h1 {
+    font-size: 2em;
+  }
+  .aboutMe__flexItem:nth-child(1) {
+    order: 2;
+  }
+  .aboutMe__flexItem:nth-child(2) {
+    order: 1;
+  }
+  .aboutMe__flexItem:nth-child(3) {
+    order: 3;
+  }
+  .aboutMe {
+    display: flex;
+    flex-direction: row;
+  }
+  .aboutMe .aboutMe__rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+  }
+}/*# sourceMappingURL=style.css.map */
