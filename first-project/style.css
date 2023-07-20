@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  margin: 0px;
   padding-bottom: 50px;
 }
 .aboutMe h2 {
@@ -43,6 +43,13 @@ body {
   align-items: center;
   margin: 20px;
   padding-bottom: 50px;
+  gap: 45px;
+}
+.technicalSkills .technicalSkills__icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px;
 }
 
 .projects {
@@ -56,11 +63,27 @@ body {
 .projects .project__card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 80vw;
+  height: auto;
+  border: 2px solid red;
 }
-.projects img {
-  height: 100px;
-  width: auto;
+.projects .project__card img {
+  width: 100%;
+  height: auto;
+}
+.projects .project__card p {
+  padding: 5px;
+}
+.projects .project__card .project__tag {
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  border: 2px solid black;
+  border-radius: 7px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 footer {
@@ -70,7 +93,6 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
   height: 100px;
 }
 footer img {
@@ -152,5 +174,15 @@ footer img {
     flex: display;
     flex-direction: column;
     align-self: center;
+  }
+  .technicalSkills .technicalSkills__icons {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr;
+    gap: 5px;
+  }
+  .technicalSkills .technicalSkills__icons img {
+    height: 75%;
+    width: 75%;
   }
 }/*# sourceMappingURL=style.css.map */
