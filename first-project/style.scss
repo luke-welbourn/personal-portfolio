@@ -50,7 +50,29 @@ body {
     h2 {
         padding-bottom: 20px;
     }
+
+    img {
+        width:60vw;
+        height:auto;
+    }
+
+    .aboutMe__flexItem:nth-child(2) {
+        order: 1;
+    }
+
+    .aboutMe__flexItem:nth-child(1) {
+        order: 2;
+    }
+    .aboutMe__flexItem:nth-child(3) {
+        order: 3;
+    }
+
+
 }
+
+
+
+
 
 .technicalSkills {
 
@@ -124,14 +146,15 @@ body {
 
 footer {
 
-    background-color: rgb(66, 62, 62) ;
+    background-color: rgb(20, 20, 20) ;
     color:rgb(255, 255, 255);
     display:flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 150px;
+    height: 175px;
     width:100%;
+
 
     .footer__links {
 
@@ -140,26 +163,60 @@ footer {
         justify-content: center;
         align-items: center;
 
-        img {
-            height: 40px;
-            width: 40px;
+        .footer__images {
+
+            height: 45px;
+            width: 45px;
             background-color: white;
+            display:grid;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+
+
+            img {
+
+                height: 30px;
+                width: 30px;
+                background-color: white;
+                display:grid;
+
+            }
+
+        }
+
+        p {
+            height:45px;
+            width:45px;
+            background-color: white;
+            color: black;
+            display:grid;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size:1.1em
+        }
+
+    }
+
+    #footer__github {
+        img {
+            height:20px;
+            width:20px;
+        }
+    }
+
+    #footer__linkedin {
+        img {
+            padding-bottom:4px
         }
 
     }
 
 }
 
-.aboutMe__flexItem:nth-child(2) {
-    order: 1;
-}
 
-.aboutMe__flexItem:nth-child(1) {
-    order: 2;
-}
-.aboutMe__flexItem:nth-child(3) {
-    order: 3;
-}
 
 
 
@@ -235,13 +292,7 @@ footer {
     }
 
 
-    .aboutMe:nth-child(1) {
-        order: 1;
-    }
 
-    .aboutMe:nth-child(2) {
-        order: 2;
-    }
 
 
 
@@ -257,6 +308,18 @@ footer {
             align-self: center;
         }
 
+        .aboutMe:nth-child(1) {
+            order: 1;
+        }
+
+        .aboutMe:nth-child(2) {
+            order: 2;
+        }
+
+        img {
+            width:30vw;
+            height:auto;
+        }
 
     }
 
@@ -300,4 +363,22 @@ footer {
             }
         }
     }
+
+
+    footer {
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding:30px;
+
+        .footer__links {
+            display:flex;
+            justify-content: flex-end;
+        }
+    }
+
+
+
+
 }
