@@ -37,19 +37,23 @@ body {
 }
 .aboutMe h2 {
   padding-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+.aboutMe p {
+  padding-top: 35px;
 }
 .aboutMe img {
-  width: 60vw;
+  width: 70vw;
   height: auto;
 }
-.aboutMe .aboutMe__flexItem:nth-child(2) {
-  order: 1;
+.aboutMe .aboutMe__imageDiv1 {
+  display: none;
 }
-.aboutMe .aboutMe__flexItem:nth-child(1) {
-  order: 2;
-}
-.aboutMe .aboutMe__flexItem:nth-child(3) {
-  order: 3;
+.aboutMe .aboutMe__imageDiv2 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .technicalSkills {
@@ -65,6 +69,12 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 30px;
+}
+
+.projects__header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .project__holder {
@@ -94,7 +104,7 @@ body {
   padding: 5px;
 }
 .project__holder .project__card .project__tag {
-  padding: 5px;
+  padding: 10px;
   margin-bottom: 10px;
   margin-left: 20px;
   border: 2px solid black;
@@ -208,8 +218,16 @@ footer #footer__linkedin img {
   }
   .aboutMe {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     gap: 30px;
+  }
+  .aboutMe .aboutMe__imageDiv2 {
+    display: none;
+  }
+  .aboutMe .aboutMe__imageDiv1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
   }
   .aboutMe .aboutMe__rightSideDesktop {
     flex: display;
