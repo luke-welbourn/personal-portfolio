@@ -90,7 +90,7 @@ body {
   flex-direction: column;
   width: 80vw;
   height: auto;
-  border: 2px solid rgb(101, 163, 204);
+  border-radius: 6px;
 }
 .project__holder .project__card .project__image {
   margin-left: -10px;
@@ -102,9 +102,10 @@ body {
 }
 .project__holder .project__card p {
   padding: 5px;
+  margin-left: 0;
 }
 .project__holder .project__card .project__tag {
-  padding: 10px;
+  padding: 7px;
   margin-bottom: 10px;
   margin-left: 20px;
   border: 2px solid black;
@@ -113,6 +114,25 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  text-align: center;
+}
+.project__holder .project__card .project__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -17px;
+  margin-bottom: 13px;
+  margin-top: 5px;
+}
+.project__holder .project__card .project__reactHeader {
+  font-size: 2em;
+}
+.project__holder .project__card .project__clientHeader {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-top: -10px;
+  margin-bottom: 15px;
 }
 
 footer {
@@ -267,6 +287,10 @@ footer #footer__linkedin img {
   .projects .project__holder .project__card {
     width: 25vw;
     height: auto;
+  }
+  .projects .project__holder .project__button {
+    display: flex;
+    flex-direction: row;
   }
   footer {
     display: flex;
