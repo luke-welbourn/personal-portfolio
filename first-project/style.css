@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 * {
-  margin: 10px;
+  margin: 7px;
   padding: 0;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
@@ -26,6 +26,26 @@ body {
 .summary .summary__headline {
   padding-top: 30px;
   font-size: 3em;
+}
+.summary .summary__mobileHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.summary .summary__mobileHeader p {
+  display: grid;
+  align-items: center;
+  margin-left: -5px;
+}
+.summary .summary__mobileHeader .summary__burgerIcon {
+  width: 10vw;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.summary .summary__mobileHeader .summary__burgerIcon img {
+  width: 10vw;
+  height: auto;
 }
 
 .aboutMe {
@@ -69,6 +89,9 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 30px;
+}
+.technicalSkills h2 {
+  font-size: 2.5em;
 }
 
 .projects__header {
@@ -218,6 +241,9 @@ footer #footer__linkedin img {
   .summary {
     display: flex;
     height: 684px;
+  }
+  .summary .summary__mobileHeader img {
+    display: none;
   }
   .summary .desktop-only {
     display: grid;
