@@ -137,6 +137,39 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 1024px) {
+  .aboutMe {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .aboutMe .aboutMe__imageDiv2 {
+    display: none;
+  }
+  .aboutMe .aboutMe__imageDiv1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutMe .aboutMe__rightSideDesktop {
+    flex: display;
+    flex-direction: column;
+    align-self: center;
+  }
+  .aboutMe .aboutMe__rightSideDesktop h2 {
+    align-self: flex-start;
+  }
+  .aboutMe .aboutMe:nth-child(1) {
+    order: 1;
+  }
+  .aboutMe .aboutMe:nth-child(2) {
+    order: 2;
+  }
+  .aboutMe img {
+    width: 30vw;
+    height: auto;
+  }
+}
 .technicalSkills {
   display: flex;
   flex-direction: column;
@@ -155,6 +188,18 @@ body {
   font-size: 2.5em;
 }
 
+@media screen and (min-width: 1024px) {
+  .technicalSkills .technicalSkills__icons {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1fr;
+    gap: 5px;
+  }
+  .technicalSkills .technicalSkills__icons img {
+    height: 75%;
+    width: 75%;
+  }
+}
 .projects__header {
   display: grid;
   justify-content: center;
@@ -219,6 +264,26 @@ body {
   margin-bottom: 15px;
 }
 
+@media screen and (min-width: 1024px) {
+  .projects h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects .project__holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .projects .project__holder .project__card {
+    width: 25vw;
+    height: auto;
+  }
+  .projects .project__holder .project__button {
+    display: flex;
+    flex-direction: row;
+  }
+}
 footer {
   background-color: rgb(20, 20, 20);
   color: rgb(255, 255, 255);
@@ -271,62 +336,6 @@ footer #footer__linkedin img {
 }
 
 @media screen and (min-width: 1024px) {
-  .aboutMe {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
-  .aboutMe .aboutMe__imageDiv2 {
-    display: none;
-  }
-  .aboutMe .aboutMe__imageDiv1 {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-  }
-  .aboutMe .aboutMe__rightSideDesktop {
-    flex: display;
-    flex-direction: column;
-    align-self: center;
-  }
-  .aboutMe .aboutMe:nth-child(1) {
-    order: 1;
-  }
-  .aboutMe .aboutMe:nth-child(2) {
-    order: 2;
-  }
-  .aboutMe img {
-    width: 30vw;
-    height: auto;
-  }
-  .technicalSkills .technicalSkills__icons {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 1fr;
-    gap: 5px;
-  }
-  .technicalSkills .technicalSkills__icons img {
-    height: 75%;
-    width: 75%;
-  }
-  .projects h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .projects .project__holder {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  .projects .project__holder .project__card {
-    width: 25vw;
-    height: auto;
-  }
-  .projects .project__holder .project__button {
-    display: flex;
-    flex-direction: row;
-  }
   footer {
     display: flex;
     flex-direction: row-reverse;
