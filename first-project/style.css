@@ -46,6 +46,7 @@ body {
   display: grid;
   align-items: center;
   margin-left: -5px;
+  font-size: 1.25em;
 }
 .summary .summary__mobileHeader .summary__burgerIcon {
   width: 10vw;
@@ -64,6 +65,9 @@ body {
     display: flex;
     height: 684px;
     justify-content: space-evenly;
+  }
+  .summary .summary__mobileHeader p {
+    font-size: 1.25em;
   }
   .summary .summary__mobileHeader img {
     display: none;
@@ -123,6 +127,7 @@ body {
 }
 .aboutMe p {
   padding-top: 35px;
+  line-height: 1.75;
 }
 .aboutMe img {
   width: 70vw;
@@ -204,6 +209,9 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
+  font-size: 3em;
+  margin-top: 40px;
+  margin-bottom: 70px;
 }
 
 .project__holder {

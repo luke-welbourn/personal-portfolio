@@ -19,6 +19,7 @@
       display: grid;
       align-items: center;
       margin-left: -5px;
+      font-size: 1.25em;
     }
 
     .summary__burgerIcon {
@@ -43,6 +44,9 @@
     justify-content: space-evenly;
 
     .summary__mobileHeader {
+      p {
+        font-size: 1.25em;
+      }
       img {
         display: none;
       }
