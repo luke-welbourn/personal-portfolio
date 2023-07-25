@@ -59,6 +59,35 @@ body {
   height: auto;
 }
 
+@media screen and (min-width: 1024px) {
+  .summary {
+    display: flex;
+    height: 684px;
+    justify-content: space-evenly;
+  }
+  .summary .summary__mobileHeader img {
+    display: none;
+  }
+  .summary .desktop-only {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .summary .desktop-only img {
+    height: 604px;
+    width: auto;
+  }
+  .summary .summary__leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50wv;
+  }
+  .summary .summary__leftSide h1 {
+    font-size: 2em;
+  }
+}
 .aboutMe {
   display: flex;
   flex-direction: column;
@@ -239,33 +268,6 @@ footer #footer__linkedin img {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .summary {
-    display: flex;
-    height: 684px;
-    justify-content: space-evenly;
-  }
-  .summary .summary__mobileHeader img {
-    display: none;
-  }
-  .summary .desktop-only {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .summary .desktop-only img {
-    height: 604px;
-    width: auto;
-  }
-  .summary .summary__leftSide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    width: 50wv;
-  }
-  .summary .summary__leftSide h1 {
-    font-size: 2em;
   }
   .aboutMe {
     display: flex;
