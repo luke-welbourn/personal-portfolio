@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-@use "./variables";
+// @use "./variables";
+
+* {
+  margin: 7px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
 
 header {
   display: none;
@@ -274,6 +281,7 @@ footer {
   .summary {
     display: flex;
     height: 684px;
+    justify-content: space-evenly;
 
     .summary__mobileHeader {
       img {
@@ -384,7 +392,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    color: red;
 
     .footer__links {
       display: flex;

@@ -241,12 +241,15 @@ footer #footer__linkedin img {
   .summary {
     display: flex;
     height: 684px;
+    justify-content: space-evenly;
   }
   .summary .summary__mobileHeader img {
     display: none;
   }
   .summary .desktop-only {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .summary .desktop-only img {
     height: 604px;
