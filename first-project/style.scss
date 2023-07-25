@@ -2,13 +2,15 @@
 
 @use "./header";
 
+@use "./body";
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-body {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
+// body {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 50px;
+// }
 
 .summary {
   margin: 20px;
