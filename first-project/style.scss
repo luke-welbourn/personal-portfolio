@@ -6,40 +6,10 @@
 
 @use "./summary";
 
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@use "./nav";
 
-.aboutMe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0px;
-  padding-bottom: 50px;
-
-  h2 {
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 2em;
-  }
-
-  p {
-    padding-top: 35px;
-  }
-
-  img {
-    width: 70vw;
-    height: auto;
-  }
-
-  .aboutMe__imageDiv1 {
-    display: none;
-  }
-
-  .aboutMe__imageDiv2 {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-  }
-}
+@use "./aboutMe" @import
+  url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 .technicalSkills {
   display: flex;
@@ -197,67 +167,6 @@ footer {
 // MEDIA SCREEN BREAK HERE!
 
 @media screen and (min-width: 1024px) {
-  header {
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-
-      a {
-        color: black;
-        text-decoration: none;
-      }
-
-      #nav__getintouch {
-        border: 2px solid black;
-        border-radius: 5px;
-        font-weight: bold;
-        height: 40px;
-        width: 130px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-  }
-
-  .aboutMe {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-
-    .aboutMe__imageDiv2 {
-      display: none;
-    }
-
-    .aboutMe__imageDiv1 {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .aboutMe__rightSideDesktop {
-      flex: display;
-      flex-direction: column;
-      align-self: center;
-      h2 {
-      }
-    }
-
-    .aboutMe:nth-child(1) {
-      order: 1;
-    }
-
-    .aboutMe:nth-child(2) {
-      order: 2;
-    }
-
-    img {
-      width: 30vw;
-      height: auto;
-    }
-  }
-
   .technicalSkills {
     .technicalSkills__icons {
       display: grid;
