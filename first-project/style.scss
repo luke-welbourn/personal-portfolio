@@ -1,18 +1,8 @@
-@use "./variables";
+@use "./variables" as *;
+
+@use "./header";
 
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-
-// * {
-//   margin: 7px;
-//   padding: 0;
-//   box-sizing: border-box;
-//   font-family: "Rubik", sans-serif;
-// }
-
-header {
-  display: none;
-  color: red;
-}
 
 body {
   display: flex;
@@ -248,14 +238,6 @@ footer {
 
 @media screen and (min-width: 1024px) {
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
-    margin-top: -5px;
-    padding-top: 0px;
-    border-bottom: 2px solid grey;
-
     nav {
       display: flex;
       align-items: center;
