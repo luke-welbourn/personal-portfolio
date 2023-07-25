@@ -1,16 +1,17 @@
+@use "./variables";
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-// @use "./variables";
-
-* {
-  margin: 7px;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
-}
+// * {
+//   margin: 7px;
+//   padding: 0;
+//   box-sizing: border-box;
+//   font-family: "Rubik", sans-serif;
+// }
 
 header {
   display: none;
+  color: red;
 }
 
 body {
@@ -332,6 +333,8 @@ footer {
       flex: display;
       flex-direction: column;
       align-self: center;
+      h2 {
+      }
     }
 
     .aboutMe:nth-child(1) {
