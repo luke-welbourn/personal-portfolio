@@ -20,7 +20,6 @@
     flex-direction: column;
     width: 80vw;
     height: auto;
-    border-radius: 6px;
 
     .project__image {
       margin-left: -10px;
@@ -30,6 +29,7 @@
     img {
       width: 100%;
       height: auto;
+      border-radius: 5px;
     }
 
     p {

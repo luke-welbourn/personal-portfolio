@@ -25,6 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  background-color: rgb(248, 248, 248);
 }
 
 .summary {
@@ -54,6 +55,7 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
+  margin-top: -5px;
 }
 .summary .summary__mobileHeader .summary__burgerIcon img {
   width: 10vw;
@@ -227,7 +229,6 @@ body {
   flex-direction: column;
   width: 80vw;
   height: auto;
-  border-radius: 6px;
 }
 .project__holder .project__card .project__image {
   margin-left: -10px;
@@ -236,6 +237,7 @@ body {
 .project__holder .project__card img {
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 .project__holder .project__card p {
   padding: 5px;
@@ -293,7 +295,7 @@ body {
   }
 }
 footer {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(54, 54, 54);
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
