@@ -1,0 +1,19 @@
+@use "./variables" as *;
+
+@use "./header";
+
+@use "./body";
+
+@use "./summary";
+
+@use "./nav";
+
+@use "./aboutMe";
+
+@use "./technicalSkills";
+
+@use "./projects";
+
+@use "./footer";
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
