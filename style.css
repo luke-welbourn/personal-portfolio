@@ -70,6 +70,7 @@ body {
   }
   .summary .summary__mobileHeader p {
     font-size: 1.25em;
+    width: 100%;
   }
   .summary .summary__mobileHeader img {
     display: none;
@@ -164,7 +165,8 @@ body {
     align-self: center;
   }
   .aboutMe .aboutMe__rightSideDesktop h2 {
-    align-self: flex-start;
+    display: flex;
+    justify-content: flex-start;
   }
   .aboutMe .aboutMe:nth-child(1) {
     order: 1;
@@ -230,10 +232,6 @@ body {
   width: 80vw;
   height: auto;
 }
-.project__holder .project__card .project__image {
-  margin-left: -10px;
-  margin-top: -10px;
-}
 .project__holder .project__card img {
   width: 100%;
   height: auto;
@@ -289,9 +287,21 @@ body {
     width: 25vw;
     height: auto;
   }
+  .projects .project__holder .project__card .project__image {
+    margin: 5px;
+  }
+  .projects .project__holder .project__card .project__image img {
+    margin: 0px;
+  }
   .projects .project__holder .project__button {
     display: flex;
     flex-direction: row;
+  }
+  .projects .project__holder .project__reactHeader {
+    font-size: 1.25em;
+  }
+  .projects .project__holder .project__clientHeader {
+    font-size: 1.6em;
   }
 }
 footer {

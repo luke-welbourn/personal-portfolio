@@ -21,11 +21,6 @@
     width: 80vw;
     height: auto;
 
-    .project__image {
-      margin-left: -10px;
-      margin-top: -10px;
-    }
-
     img {
       width: 100%;
       height: auto;
@@ -89,11 +84,26 @@
       .project__card {
         width: 25vw;
         height: auto;
+
+        .project__image {
+          margin: 5px;
+          img {
+            margin: 0px;
+          }
+        }
       }
 
       .project__button {
         display: flex;
         flex-direction: row;
+      }
+
+      .project__reactHeader {
+        font-size: 1.25em;
+      }
+
+      .project__clientHeader {
+        font-size: 1.6em;
       }
     }
   }

@@ -53,11 +53,10 @@
       flex-direction: column;
       align-self: center;
       h2 {
-        align-self: flex-start;
+        display: flex;
+        justify-content: flex-start;
       }
     }
-
-    // look at flex start of about me just above
 
     .aboutMe:nth-child(1) {
       order: 1;
