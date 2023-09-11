@@ -25,7 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  background-color: rgb(248, 248, 248);
+  background-color: #99bbd8;
 }
 
 .summary {
@@ -134,7 +134,8 @@ body {
 }
 .aboutMe img {
   width: 70vw;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 .aboutMe .aboutMe__imageDiv1 {
   display: none;
