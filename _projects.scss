@@ -21,10 +21,15 @@
     width: 80vw;
     height: auto;
 
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
+    .project__image {
+      height: 25vh;
+      img {
+        width: 100%;
+        height: auto;
+        max-height: 50vh;
+        border-radius: 5px;
+        max-height: 25vh;
+      }
     }
 
     p {

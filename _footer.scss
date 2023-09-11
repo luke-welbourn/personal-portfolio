@@ -6,13 +6,15 @@ footer {
   flex-direction: column;
   align-items: center;
   height: 175px;
-  width: 100%;
+  width: 100vw;
+  margin: -14px;
 
   .footer__links {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 15px;
 
     .footer__images {
       height: 45px;
@@ -56,6 +58,10 @@ footer {
     img {
       padding-bottom: 4px;
     }
+  }
+
+  #footer__email {
+    padding-right: 10px;
   }
 }
 

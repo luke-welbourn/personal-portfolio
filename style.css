@@ -233,10 +233,15 @@ body {
   width: 80vw;
   height: auto;
 }
-.project__holder .project__card img {
+.project__holder .project__card .project__image {
+  height: 25vh;
+}
+.project__holder .project__card .project__image img {
   width: 100%;
   height: auto;
+  max-height: 50vh;
   border-radius: 5px;
+  max-height: 25vh;
 }
 .project__holder .project__card p {
   padding: 5px;
@@ -313,13 +318,15 @@ footer {
   flex-direction: column;
   align-items: center;
   height: 175px;
-  width: 100%;
+  width: 100vw;
+  margin: -14px;
 }
 footer .footer__links {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 15px;
 }
 footer .footer__links .footer__images {
   height: 45px;
@@ -354,6 +361,9 @@ footer #footer__github img {
 }
 footer #footer__linkedin img {
   padding-bottom: 4px;
+}
+footer #footer__email {
+  padding-right: 10px;
 }
 
 @media screen and (min-width: 1024px) {
